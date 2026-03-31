@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e8f5e9;
+}
+
+header {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #8c6239;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px;
+}
+
+.intro h2 {
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #555;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #a67c52;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.card a:hover {
+    background: #8c6239;
+}
+
+.intro img {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: white;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    .recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
